@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- meta tag -->
+        <meta charset="utf-8">
+        <title>CBSE | KENDRIYA VIDYALAYA</title>
+        <meta name="description" content="">
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="">
+        <link rel="shortcut icon" type="image/x-icon" href="">
+        <!-- bootstrap v4 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<!-- slick css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<!-- Offcanvas CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
+		<!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+		<!-- flaticon2 css  -->
+        <link rel="stylesheet" type="text/css" href="assets/fonts/fonts2/flaticon.css">
+        <!-- rsmenu CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/rsmenu-main.css">
+        <!-- rsmenu transitions CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/rsmenu-transitions.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+        <!--[if lt IE 9]>
+            <script src="assets/js/html5.min.js"></script>
+            <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+		
+
+
+<style>
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+  text-transform: none;
+  color: rgba(254, 82, 76, 1);
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.nav-link,.navbar-brand{
+  color:#ff3115!important;
+}
+
+.navbar-brand:hover,.nav-link:hover{
+  color:brown!important;
+}
+
+a:link,
+a:active,
+a:visited{
+  color:rgba(255,255,255,1);
+}
+
+a:hover{
+  color:brown;
+}
+
+.gray {
+  color: #a5a5a5;
+}
+
+.team{
+  margin:40px;
+}
+
+.team-member {
+  margin: 15px 0;
+  padding: 0;
+}
+
+.team-member figure {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.team-member figure img {
+  min-width: 100%;
+}
+
+.team-member figcaption p {
+  font-size: 16px;
+}
+
+.team-member figcaption ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-member figcaption ul {
+  visibility: visible;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.team-member h4 {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.team-member figcaption {
+  padding: 50px;
+  color: transparent;
+  background-color: transparent;
+  position: absolute;
+  z-index: 996;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+  visibility: visible;
+  color: #fff;
+  background: rgba(230, 78, 62, 0.9);
+  /* Primary color, can be changed via colors.css */
+  
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+  color: rgba(49, 49, 49, .97);
+}
+
+.team-member figure img {
+  -webkit-transform: scale(1) rotate(0) translateY(0);
+  -moz-transform: scale(1) rotate(0) translateY(0);
+  -o-transform: scale(1) rotate(0) translateY(0);
+  -ms-transform: scale(1) rotate(0) translateY(0);
+  transform: scale(1) rotate(0) translateY(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+  -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+  -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+  transform: scale(1.1) rotate(1deg) translateY(12px);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+
+</style>
+
+</head>
+<body class="home5">
+<div id="h1"></div>
+<!-- Our team Section -->
+<section id="team" class="team content-section">
+
+
+<svg width="689" height="406" viewBox="0 0 689 406" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="
+    /* transform: rotate(180deg); */
+    position: absolute;
+    /* transform: inherit; */
+    right: -20rem;
+    position: absolute;
+    height: calc(100% - 1rem + (2 * var(--top-bottom-padding)));
+    max-height: 304px;
+"><defs><pattern id="cta-svg-right-c" width="22" height="22" x="-172.6" y="-256" patternUnits="userSpaceOnUse"><use xlink:href="#cta-svg-right-a" transform="scale(.1)"></use></pattern><image id="cta-svg-right-a" width="220" height="220" xlink:href="data:image/png;base64,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"></image><path d="M667.4 46.3c-3.7 9.7-1.8 18 8.4 25.3 20.9 77.3-.1 151.7-55 179.6L612 256l-1.2.6c-16.6 8.7-34.7 16.9-54 7.8-6.6.4-13.2.8-19.8 1.4-1.8.2-3.2-.5-4.5-1.3l-.4-.3c-3-1.8-6-3.6-12.8 3.9-12.2 2-23.3 4.7-33.7 10-1.3.7-2.2 2.4-3 4.1l-.2.4-.3.8c-1.9 4-3.8 8.2-9.3 3a91.3 91.3 0 00-12.6 12.5c-.8.8-.9 2.2-1 3.8v.3c-.1 3.8-.4 8.2-9.4 8.2-8.2 0-8 2.9-7.1 6v.3l.1.3.1.5.1.3c.4 1.4.6 2.8 0 4a132.7 132.7 0 01-21 28.6l.2 4v.7c0 4.9-1.2 9.7-10.8 5.5-7.7 6.7-14.9 20.9-27.5 26.6-2.9 1.3-7.1.8-11.4.3l-1-.2c-4.5-.6-8.8-1.3-11.1-.1-1.4.7 1.4 11.5 0 12-20.1 8.3-33.5 3.9-54 0-3.8-.6-16-.4-16-9.2-3.4-1.3-6.8-2.3-10.1-3.2l-1.9-.6a66 66 0 01-23-10.6c-28.1-21.3-53.2-51-48.6-109.4 4.6-58.2-50.1-74.8-89.9-86.7l-2.1 1.2-.5.3c-6 3.7-9.8 7.4-17.6-7.3a234 234 0 01-51-18.6c-1.5-.8-2-1.8-2.5-3v-.2l-.2-.4c-1-2.5-2-5-10.4-5C10.4 147.1 5.5 116 2 86.4-1.7 56.3 1.4 27.2 10.8.4h633.4c9.5 15 17.2 30.4 23.2 45.9z" id="cta-svg-right-b"></path></defs><g fill="none" fill-rule="evenodd"><g transform="translate(4.6 .6)"><mask id="cta-svg-right-d" fill="#fff"><use xlink:href="#cta-svg-right-b"></use></mask><path fill="url(#cta-svg-right-c)" fill-rule="nonzero" mask="url(#cta-svg-right-d)" d="M-150.6-234h992.7v694.4h-992.7z"></path></g><path d="M595 230c-21 7.7-44 6.4-67.3 5.2l-3.9-.2c-40.2-2.2-81-2.7-114 44.4-53.1 75.9-209.7 107.5-227.7-83.5C169.7 64.9 8.2 118 .6 1h655.1c39.4 99.7 10.8 202.9-60.7 229z" fill="antiquewhite" fill-rule="nonzero"></path></g></svg>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2>Our Staff</h2>
+        <h3 class="caption gray">Meet the people who make awesome stuffs</h3>
+      </div><!-- /.col-md-12 --> 
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <figure>
+                <img src="https://essayslimmer.com/assets/avatars/stevie.jpg" alt="" class="img-responsive">
+                <figcaption>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
+                  <ul>
+                    <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Lauren Cox</h4>
+              <p>Creative Director</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <figure>
+                <img src="https://semantic-ui.com/images/avatar2/large/lindsay.png" alt="" class="img-responsive">
+                <figcaption>
+                  <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.</p>
+                  <ul>
+                    <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Jessie Barnett</h4>
+              <p>UI/UX Designer</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <figure>
+                <img src="http://smtb.cbl-web.com/images/avatar/big/elliot.jpg" alt="" class="img-responsive">
+                <figcaption>
+                  <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.</p>
+                  <ul>
+                    <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <h4>Terry Fletcher</h4>
+              <p>Web Developer</p>
+            </div><!-- /.team-member-->
+          </div><!-- /.col-md-4 -->
+
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.our-team -->
+	
+<svg width="638" height="417" viewBox="0 0 638 417" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="
+    position: relative;
+	margin-bottom:-7.2px;
+    height: calc(100% - 1rem + (2 * var(--top-bottom-padding)));
+    left: -20rem;
+    max-height: 304px;
+"><defs><pattern id="cta-svg-left-c" width="22" height="22" x="-250" y="-84" patternUnits="userSpaceOnUse"><use xlink:href="#cta-svg-left-a" transform="scale(.1)"></use></pattern><image id="cta-svg-left-a" width="220" height="220" xlink:href="data:image/png;base64,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"></image><path d="M304.5 13c13 11.6 41.2 19.8 56 37a152.6 152.6 0 0127.9 46c-8.3 13.5-4.6 12.3-.7 11h.3c1.9-.7 3.7-1.3 4-.2 15.1 50.4-7.8 91.7 49 111.3 1.9 3.6 13.5 3 16.3 1.7 10.7 3.1 23.5 5.5 39 7.3l11.6 1 1.7.2c11.2 1 22.4 2.3 27.4 7 13.4 12.5 35.4 13.7 49.5 23.9l.2-.2h.1l.2-.1c1.8-1.1 3.8-1.8 3.8 3.5 37.6 29.1 55.5 74.4 42.8 131.4 2.3 2.8 1.3 3.7 0 4.6l-.1.1c-.6.5-1.3.9-1.5 1.6-1.4 5.5-3.1 11.2-5.2 16.9H42.6C2.3 334.8-2.6 246 21.1 173.2c2.7-8.4-3.5-21 0-28.9 2.7-6.1 3.2-9 3.9-11.5v-.4a33 33 0 015.4-10.7l9.4-14.9c4.6-6.3 13.6-15.7 18.7-21.4 7-7.8 13.2-15.2 21.5-22 8.3 0 8.2-10.7 12-13.4 3.5-2.5 9.5-3 15.4-3.5h1l.9-.1c7-.6 13.6-1.4 15.9-5.6 2.8-5.3 6.3-6.2 9.9-6.8h.5c2-.4 3.9-.6 5.7-1.5 13.2-6.2 15.6-15.6 29.5-19.5 2.6-8.3 24.8-5.4 26.1-1.6C235.8 1.6 281.1-8 304.5 13z" id="cta-svg-left-b"></path></defs><g fill="none" fill-rule="evenodd"><mask id="cta-svg-left-d" fill="#fff"><use xlink:href="#cta-svg-left-b"></use></mask><path fill="url(#cta-svg-left-c)" fill-rule="nonzero" mask="url(#cta-svg-left-d)" d="M-228-62h919.1v643H-228z"></path><path d="M106 120.3c84.8-74.4 241.6-77.2 293.6 0 64.6 95.9-25.9 159 113.8 192 65 15.3 111 53 122.7 104.7H4.7C-13.8 301.6 36.1 181.5 106 120.3z" fill="#ffe9e4" fill-rule="nonzero"></path></g></svg>
+
+	
+<div id="f1"></div>
+<!-- jquery latest version -->
+	
+	<!-- modernizr js -->
+        <script src="assets/js/home.js"></script>
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+		<!-- slick.min js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- magnific popup -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- rsmenu js -->
+        <script src="assets/js/rsmenu-main.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+		 <!-- main js -->
+        <script src="assets/js/main.js"></script>
+
+	<script>
+$.get("header.html", function(data){
+    $("#h1").replaceWith(data);
+});
+
+$.get("footer.html", function(data){
+    $("#f1").replaceWith(data);
+});
+	</script>
