@@ -15,8 +15,6 @@
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
         <!-- font-awesome css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
         <!-- owl.carousel css -->
         <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
 		<!-- slick css -->
@@ -25,14 +23,6 @@
         <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
 		<!-- Offcanvas CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
-		<!-- flaticon css  -->
-        <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-		<!-- flaticon2 css  -->
-        <link rel="stylesheet" type="text/css" href="assets/fonts/fonts2/flaticon.css">
-        <!-- rsmenu CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/rsmenu-main.css">
-        <!-- rsmenu transitions CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/rsmenu-transitions.css">
         <!-- style css -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!-- responsive css -->
@@ -260,11 +250,7 @@ element.style {
 	
 	
 <div id="f1"></div>
-<!-- jquery latest version -->
-	
-	<!-- modernizr js -->
-        <script src="assets/js/home.js"></script>
-        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+
         <!-- jquery latest version -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- bootstrap js -->
@@ -277,22 +263,19 @@ element.style {
         <script src="assets/js/isotope.pkgd.min.js"></script>
         <!-- imagesloaded.pkgd.min js -->
         <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <!-- wow js -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- counter top js -->
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
         <!-- magnific popup -->
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- rsmenu js -->
-        <script src="assets/js/rsmenu-main.js"></script>
-        <!-- plugins js -->
-        <script src="assets/js/plugins.js"></script>
-		 <!-- main js -->
-        <script src="assets/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js"></script>
 
 	<script>
+	$.get("header.html", function(data){
+    $("#h1").replaceWith(data);
+});
+
+$.get("footer.html", function(data){
+    $("#f1").replaceWith(data);
+});
+
 	$(document).ready(function() {
 			var $gallery = $('#gallery');
 			var $boxes = $('.revGallery-anchor');
@@ -344,12 +327,4 @@ $("#gallery a").on({
       $(this).find(".nak-gallery-poster").removeClass("walden").addClass("inkwell");
   }
 }); 
-
-$.get("header.html", function(data){
-    $("#h1").replaceWith(data);
-});
-
-$.get("footer.html", function(data){
-    $("#f1").replaceWith(data);
-});
 	</script>

@@ -6594,6 +6594,10 @@ ul {
   margin-top: 20px;
 }
 
+.recent-post-widget{
+	float:left!important;
+}
+
 div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;margin-top:6px;float:left;padding:2px 4px 0 0}
 
 .navbar{
@@ -6733,5 +6737,17 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
 
 .navcolour{
     background-color:#d2d2d28c;
+}
+
+.nav-item a.active{
+	z-index:999;
+	border-bottom:3px solid brown;
+	
+}
+
+.nav-item a:not(.active){
+	z-index:999;
+	border-bottom:none;
+	
 }
 
