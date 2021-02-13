@@ -1618,7 +1618,7 @@ ul {
 ---------------------------------------*/
 #rs-slider {
   position: relative;
-  margin-top:52px;
+  margin-top:115px;
 }
 #rs-slider .slide-content {
   position: absolute;
@@ -6605,17 +6605,21 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
 	width:100%;
 	z-index:99;
 	transition:all 0.3s ease;
+	height: 115px;
+    border-bottom: 4px solid gold;
+}
+
+.navbar-brand img{
+    width: 110px;
 }
 
 @media all and (min-width:991px){
 .navbar-nav{
     flex-direction:row!important;
-    margin-left: auto;
-    margin-right: auto;
 	font-size:larger;
 }
 .navbar-brand {
-    display: flex;
+    display: inline-block;
     position: relative;
 	z-index:100;
 	margin-left:auto;
@@ -6642,12 +6646,19 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
 }
 @media all and (max-width:991px){
 .navbar-nav{
-    background: #d2d2d28c;
-	margin-top: 6.1px;
+    background: #162014a6;
+    margin-top: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
     text-align: center;
-	font-size:x-large;
-	font-weight:bold;
+    font-size: x-large;
+    font-weight: bold;
 	
+}
+.navbar-brand{
+    margin-left:auto;
+    margin-right:auto;
 }
 .navbar-nav .nav-link{
 	margin:0px!important;
@@ -6656,7 +6667,7 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
 /* Define the shape and color of the hamburger lines */
 .navbar-toggler span {
     display: block;
-    background-color: #4f4f4f;
+    background-color: #fc7f0c;
     height: 3px;
     width: 25px;
     margin-top: 5px;
@@ -6714,8 +6725,8 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
     /* padding-left: 0; */
 }
 
-.nav-link,.navbar-brand{
-  color:#ff3115!important;
+.nav-link,.navbar-brand {
+    color: #fc7f0c!important;
 }
 
 .navbar-brand:hover,.nav-link:hover{
@@ -6735,8 +6746,9 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
 	width:100%;
 }
 
-.navcolour{
-    background-color:#d2d2d28c;
+.navcolour {
+    background-color: #162014a6;
+    border-bottom: 1px solid gold;
 }
 
 .nav-item a.active{
@@ -6751,3 +6763,11 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
 	
 }
 
+/*overriding bootstrap*/
+@media all and (min-width: 992px){
+    .col-lg-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+}}
