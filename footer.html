@@ -70,6 +70,17 @@ window.onscroll = () => {
     }
 };
 		</script>
+		
+	    <script>
+$('.navbar-nav li a').click(function() {
+  $('li a').removeClass("current");
+  $(this).addClass("current");
+  localStorage.setItem('active', $(this).parent().index());
+});
+
+var ele = localStorage.getItem('active');
+$('.navbar-nav li:eq(' + ele + ')').find('a').addClass('current');
+        </script>
 		</body>
 		
 		</html>

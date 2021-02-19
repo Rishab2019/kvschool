@@ -6641,7 +6641,9 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
     margin-right: auto;
 }
 .nav-link{
-    margin:5px!important;
+	width:80px;
+	margin-top: 20px;
+
 }
 }
 @media all and (max-width:991px){
@@ -6720,7 +6722,6 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
     transform: translate(0%, 0%) rotate(0deg) ;
 }
 .navbar-nav .nav-link {
-    margin-left: 40px;
     /* padding-right: 0; */
     /* padding-left: 0; */
 }
@@ -6733,17 +6734,22 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
   color:brown!important;
 }
 
-.nav-item::after {
+.nav-link::after {
     content: '';
     display: block;
+	position:relative;
     width: 0px;
-    height: 2px;
+    height: 2.5px;
     background: brown;
     transition: width .3s;
+	margin-top: 30px;
+
 }
 
-.nav-item:hover::after,.nav-item:target::after{
+.nav-link:hover::after,.nav-link:target::after{
 	width:100%;
+	margin-top:30px;
+	
 }
 
 .navcolour {
@@ -6751,17 +6757,21 @@ div#marqueecontainer{position:relative;width:90%;height:200px;overflow:hidden;ma
     border-bottom: 1px solid gold;
 }
 
-.nav-item a.active{
-	z-index:999;
-	border-bottom:3px solid brown;
-	
+.nav-link{
+	height: 66px;
 }
 
-.nav-item a:not(.active){
-	z-index:999;
-	border-bottom:none;
-	
+.nav-item{
+            text-align: center !important;
+
 }
+
+.current {
+			border-bottom: 3px solid brown;
+}
+
+
+
 
 /*overriding bootstrap*/
 @media all and (min-width: 992px){
